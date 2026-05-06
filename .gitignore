@@ -1,0 +1,140 @@
+# ==================== PYTHON ====================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pytest
+.pytest_cache/
+
+# ==================== NODE / REACT ====================
+# Dependencies
+node_modules/
+
+# Production build
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Vite
+*.local
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional npm cache
+.npm/
+
+# ==================== IDE / EDITORS ====================
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ==================== OS / SYSTEM ====================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.fuse_hidden*
+
+# ==================== PROJECT SPECIFIC ====================
+# SQLite database (ваши данные)
+backend/data/tasks.db
+backend/data/*.db-shm
+backend/data/*.db-wal
+
+# Generated reports (не коммитим выходные файлы)
+backend/output/
+*.pdf
+*.docx
+
+# Local templates (если не хотите коммитить кастомные шаблоны)
+# backend/templates/*.docx
+# !backend/templates/.gitkeep
+
+# Environment variables (секреты)
+.env
+.env.local
+.env.*.local
+
+# Docker (опционально, если не хотите коммитить локальные образы)
+.docker/
+
+# ==================== DOCKER COMPOSE ====================
+# Если используете volumes, но не хотите коммитить данные
+*.log
+
+
+# ==================== MISC ====================
+# Coverage
+coverage/
+*.coverage
+.htmlcov/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Sentry
+.sentry/
+
+# Parcel
+.parcel-cache/
