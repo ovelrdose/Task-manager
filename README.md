@@ -17,25 +17,43 @@
 -------------------------------
 ## Шаблон
 Шаблон хранится в директории backend/templates/report_template.docx
+
 {{ author }} - Имя сотрудника (из интерфейса)
+
 {{ report_date }} - Дата генерации отчёта
+
 {{ week }}, {{ year }} - Номер недели и год
+
 {{ week_start }}, {{ week_end }} -Даты начала и конца недели
+
 {% for task in tasks %} - Цикл по задачам за неделю
+
 {{ task.title }}, {{ task.description }}, {{ task.date }} - Поля задачи
+
 ------------------------------
-## Запуск
-docker compose up -d --build
+## Запуск  
+- docker compose up -d --build
+
 Либо
+
 Запуск backend
-cd backend
-python -m venv venv
-source venv/bin/activate  # или venv\Scripts\activate на Windows
-pip install -r requirements.txt
-uvicorn main:app --reload --host 0.0.0.0 --port 8000
+
+- cd backend
+
+- python -m venv venv
+
+- source venv/bin/activate  # или venv\Scripts\activate на Windows
+- pip install -r requirements.txt
+
+- uvicorn main:app --reload --host 0.0.0.0 --port 8000
+
 
 Запуск frontend
-cd frontend
-npm install
-npm run dev
+
+- cd frontend
+
+- npm install
+
+- npm run dev
+
 
